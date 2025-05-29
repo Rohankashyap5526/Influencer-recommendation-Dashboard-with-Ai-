@@ -64,7 +64,7 @@ Clone the repository
 bash
 Copy
 Edit
-git clone https://github.com/yourusername/influencer-dashboard.git
+git clone [https://github.com/yourusername/influencer-dashboard.git](https://github.com/Rohankashyap5526/Influencer-recommendation-Dashboard-with-Ai-.git)
 cd influencer-dashboard
 Install dependencies
 
