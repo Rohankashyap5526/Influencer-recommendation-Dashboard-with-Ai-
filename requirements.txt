@@ -5,3 +5,4 @@ joblib
 groq
 streamlit-extras
 altair
+sklearn
