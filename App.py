@@ -21,7 +21,7 @@ groq.api_key = "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"
 # st.set_page_config(page_title="🎯 Influencer Recommender", layout="wide")
 
 # Load ML model
-model = joblib.load("influencer_model.pkl")
+model = joblib.load("influencer_model.joblib")
 
 # Load and clean data
 @st.cache_data
