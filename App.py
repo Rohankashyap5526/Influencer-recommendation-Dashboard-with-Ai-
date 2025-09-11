@@ -15,7 +15,7 @@ if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
 
 # Set your Groq API Key
-groq.api_key = "GROK_API"
+groq.api_key = "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"
 
 # Streamlit Page Setup
 # st.set_page_config(page_title="🎯 Influencer Recommender", layout="wide")
@@ -111,7 +111,7 @@ def get_groq_insight(influencer):
         )
 
         response = client.chat.completions.create(
-            model="llama3-8b-8192",
+            model="meta-llama/llama-4-maverick-17b-128e-instruct",
             messages=[
                 {"role": "system", "content": "You are an assistant trained to find influencer data and summarize their impact."},
                 {"role": "user", "content": prompt_text}
@@ -126,7 +126,7 @@ def get_recommendation_from_groq(prompt):
     try:
         client = groq.Groq(api_key=groq.api_key)
         response = client.chat.completions.create(
-            model="llama3-8b-8192",
+            model="meta-llama/llama-4-maverick-17b-128e-instruct",
             messages=[
                 {"role": "system", "content": "You are an assistant providing influencer recommendations."},
                 {"role": "user", "content": prompt}
@@ -433,7 +433,7 @@ with tab2:
             try:
                 client = groq.Groq(api_key=groq.api_key)
                 response = client.chat.completions.create(
-                    model="llama3-8b-8192",
+                    model="meta-llama/llama-4-maverick-17b-128e-instruct",
                     messages=[
                         {"role": "system", "content": "Answer influencer promotion queries."},
                         {"role": "user", "content": user_input}
