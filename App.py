@@ -20,8 +20,18 @@ groq.api_key = "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"
 # Streamlit Page Setup
 # st.set_page_config(page_title="🎯 Influencer Recommender", layout="wide")
 
-# Load ML model
+
+# Temporary fix for missing internal class
+from sklearn.compose import _column_transformer
+import collections
+
+if not hasattr(_column_transformer, "_RemainderColsList"):
+    _column_transformer._RemainderColsList = list
+
+# Now load your model
 model = joblib.load("influencer_model.joblib")
+
+# model = joblib.load("influencer_model.joblib")
 
 # Load and clean data
 @st.cache_data
