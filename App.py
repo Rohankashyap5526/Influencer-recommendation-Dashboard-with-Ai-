@@ -15,7 +15,7 @@ if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
 
 # Set your Groq API Key
-groq.api_key = "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"
+groq.api_key = st.secrets["api_key"]
 
 # Streamlit Page Setup
 # st.set_page_config(page_title="🎯 Influencer Recommender", layout="wide")
