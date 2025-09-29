@@ -64,7 +64,7 @@ with tab1:
     ).properties(height=400)
     st.altair_chart(bar_chart, use_container_width=True)
 
-# --- Tab 2: Visual Insights ---
+# --- Tab 2: Visual Insights --
 with tab2:
     col1, col2 = st.columns(2)
 
