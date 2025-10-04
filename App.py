@@ -443,7 +443,7 @@ with tab2:
             try:
                 client = groq.Groq(api_key=groq.api_key)
                 response = client.chat.completions.create(
-                    model="meta-llama/llama-4-maverick-17b-128e-instruct",
+                    model="meta-llama/llama-4-scout-17b-16e-instruct",
                     messages=[
                         {"role": "system", "content": "Answer influencer promotion queries."},
                         {"role": "user", "content": user_input}
