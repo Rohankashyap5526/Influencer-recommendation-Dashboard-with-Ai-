@@ -75,8 +75,7 @@ pip install -r requirements.txt
 Run the Streamlit app
 
 bash
-Copy
-Edit
+
 streamlit run app.py
 📌 Use Cases
 For brands wanting to hire the right influencer.
